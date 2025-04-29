@@ -36,5 +36,5 @@ jobs:
           gh api \
             --method PATCH \
             -H "Accept: application/vnd.github+json" \
-            /user/packages/container/${{ github.repository }}/visibility \
+            /orgs/{org}/packages/container/${{ github.repository }}/visibility \
             -f visibility=public
