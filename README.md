@@ -25,5 +25,12 @@ Pre-commit runs only on files that added to git by ```git add```
 ## Local running
 ```docker compose up --build``` and run example.py
 
+## Chech publication history
+You can check publishing history in organisation -> packages
+
 ## Using docker image
-TODO
+```
+services:
+  microservice:
+    image: ghcr.io/semantic-hallucinations/py-microservice-template:latest   # or commit sha, or tag name instead of <latest>
+```
